@@ -120,7 +120,7 @@ LLList UGShortestPath(UGGraph* graph, char* vertex1, char* vertex2){
 			}
 		}
 		tmp2 = Search(w,u);
-		tmp2->item = &one;		//W[u] = 1
+		tmp2->item = &one;		
 		tmp2 = Search(dist,u);
 		if (strcmp(u,dest)==0){
 			best_cost = *((int*)tmp2->item);		// best cost = dist[dest]
@@ -139,16 +139,16 @@ LLList UGShortestPath(UGGraph* graph, char* vertex1, char* vertex2){
 		LLNode neighbor = LLNext(neighbors,LL_NIL);		//first neighbor
 		for(LLNode node = neighbor; node != NULL; node = node->next){		//for each neighbor v of u:
 			int cost = 0;
-			tmp3 = Search(w,node->item);		//W[v]
-			tmp2 = Search(dist,tmp3->key);		// dist[v]
-			if (*((int*)tmp3->item)==1)		//if W[v] == 1
+			tmp3 = Search(w,node->item);		
+			tmp2 = Search(dist,tmp3->key);		
+			if (*((int*)tmp3->item)==1)	
 	            continue;
 			tmp = Search(dist,u);
-			cost = *((int*)tmp->item) + 1;		//alt = dist[u] + 1
+			cost = *((int*)tmp->item) + 1;	
 	        if (cost < *((int*)tmp2->item)){
 				tmp2->item = &cost;
 				pr = Search(prev,tmp3->key);
-				pr->item = strdup(u);		//prev[v] = u
+				pr->item = strdup(u);		
 			}
 		}
 	}
