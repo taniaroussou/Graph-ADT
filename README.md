@@ -14,7 +14,8 @@ An undirected graph abstract data type in C that consists of basic operations an
 # Compile and run commands
 
 Compile and run: 
-```make
+```
+make
 ./graph
 ```
 Clean:
@@ -37,7 +38,8 @@ Implementation of a hash table with seperate chaining. The keys are always strin
 # Compile and run commands
 
 Compile and run: 
-```make
+```
+make
 ./hash_table
 ```
 Clean:
