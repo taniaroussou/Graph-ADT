@@ -13,8 +13,12 @@ An undirected graph abstract data type in C that consists of basic operations an
 
 # Compile and run commands
 
-Compile and run: ```make
-                    ./graph```
+Compile and run: 
+```make
+./graph
+```
+Clean:
+`make clean`
 
 > *This implementation: is based on a hash table with seperate chaining, uses adjacency lists and vertices are considered strings.*
 
@@ -32,5 +36,9 @@ Implementation of a hash table with seperate chaining. The keys are always strin
 
 # Compile and run commands
 
-Compile: `make`
-Run: `./hash_table`
+Compile and run: 
+```make
+./hash_table
+```
+Clean:
+`make clean`
