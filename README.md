@@ -11,6 +11,17 @@ An undirected graph abstract data type in C that consists of basic operations an
 - UGShortestPath(hash, vertex1, vertex2): Returns the shortest path (list of vertices) between the given ones using Dijkstra’s algorithm. Returns an empty list if there is no such path.
 - UGDestroy(graph): Destroys the graph by freeing all reserved memory.
 
-> This implementation uses adjacency lists and vertices are considered strings.
+> *This implementation: is based on a hash table with seperate chaining, uses adjacency lists and vertices are considered strings.*
 
+# Hash Table ADT
+Implementation of a hash table with seperate chaining. Keys are always strings and data to be inserted can be anything.
+
+# Basic operations
+- HTCreate(): creates an empty hash
+- HTSize(hash): returns the number of elements in the hash
+- HTGet(hash, key, pitem): searches for key in the hash. If found, returns true and copies the item in the pitem pointer passed as argument.
+- HTInsert(hash, key, item): inserts a key (with its item) in the hash (replace if exists)
+- HTRemove(hash, key): removes the key from the hash
+- HTVisit(hash, visit) : calls visit(hash, key, item) for all entries in the hash (in arbitrary order). visit is a function given by the user.
+- HTDestroy(hash): destroys the hash by freeing all reserved memory.
 
