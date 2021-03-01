@@ -2,7 +2,7 @@
 An undirected graph abstract data type in C that consists of basic operations and a shortest path implementation using Dijkstra's algorithm.
 
 # Basic operations
-- UGCreate(n): Creates an empty graph.
+- UGCreate(): Creates an empty graph.
 - UGAddVertex(graph, vertex): Adds a vertex.
 - UGRemoveVertex(graph, vertex): Removes a vertex (and all incident edges)
 - UGAddEdge(graph, vertex1, vertex2): Adds an edge between two vertices
