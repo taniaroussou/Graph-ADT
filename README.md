@@ -13,8 +13,8 @@ An undirected graph abstract data type in C that consists of basic operations an
 
 # Compile and run commands
 
-Compile: `make`
-Run: `./graph`
+Compile and run: ```make
+./graph```
 
 > *This implementation: is based on a hash table with seperate chaining, uses adjacency lists and vertices are considered strings.*
 
