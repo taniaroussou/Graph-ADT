@@ -7,13 +7,14 @@ void visit_string(LLList list, LLNode node) {
 	printf("%s ", s);
 }
 
-/*	               piz
-                 /    \
-				/  	    \
-               foo------bar
-			 	\      /
-				 \   /
-		abc-------izi
+/*example graph:              
+		   piz
+                  /    \
+		 /  	\
+                foo------bar
+	          \      /
+		   \    /
+	  abc-------izi
 */
 
 int main(){
